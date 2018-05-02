@@ -23,9 +23,19 @@ editing the part of this `Dockerfile` where the environment variables are set:
 
 ## Run
 
+Locally:
+
 ```bash
 
   docker run dante:test
+
+```
+
+On your remote server use your remote IP and the port specified in the `Dockerfile`:
+
+```bash
+
+  docker run -p <your-remote-ip>:<port>:<port> dante:test
 
 ```
 

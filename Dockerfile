@@ -25,6 +25,6 @@ ADD danted.conf /etc/sockd.conf
 RUN sed -i s/1080/$DANTE_PORT/g /etc/sockd.conf
 RUN sed -i s/0.0.0.0/$DANTE_ADDRESS/g /etc/sockd.conf
 
-EXPOSE 108
+EXPOSE $DANTE_PORT
 
 CMD sockd
