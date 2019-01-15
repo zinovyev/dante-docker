@@ -15,7 +15,7 @@ editing the part of this `Dockerfile` where the environment variables are set:
 
 ```bash
 
-  git@github.com:zinovyev/dante-docker.git
+  git clone git@github.com:zinovyev/dante-docker.git
   cd dante-docker
   docker build -t dante:test .
 
